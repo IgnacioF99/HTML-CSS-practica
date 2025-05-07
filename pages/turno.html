@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sacar Turno - Centro Médico</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <header class="header">
+      <nav class="nav container">
+        <a href="/index.html" class="nav-logo">
+          <img
+            src="/assets/undraw_doctor_aum1.svg"
+            alt="Una imagen de un doctor con un pasiente"
+            class="icon-nav"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="especialidades.html">Especialidades</a></li>
+          <li><a href="laboratorio.html">Laboratorio</a></li>
+          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <a href="login.html" class="login-btn">Iniciar Sesión</a>
+          <a href="registro.html" class="register-btn">Registrarse</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="appointment container">
+        <h1>Solicitar Turno</h1>
+        <div class="appointment-form">
+          <div class="doctor-info">
+            <div class="form-group">
+              <label>Especialidad</label>
+              <select>
+                <option>Seleccionar especialidad</option>
+                <option>Cardiología</option>
+                <option>Odontología</option>
+                <option>Pediatría</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Doctor</label>
+              <select>
+                <option>Seleccionar doctor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Centro Médico</label>
+              <select>
+                <option>Seleccionar centro</option>
+              </select>
+            </div>
+            <div class="calendar">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mié</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sáb</th>
+                    <th>Dom</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Días del calendario -->
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                  </tr>
+                  <!-- Más filas... -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="patient-info">
+            <div class="form-group">
+              <label>Nombre Completo</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>DNI</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>Obra Social</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>Horario</label>
+              <select>
+                <option>Seleccionar horario</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btn">Solicitar Turno</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-link"
+            ><i class="fab fa-facebook-messenger"></i
+          ></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fas fa-phone"></i></a>
+        </div>
+        <p>&copy; 2025 Centro Médico. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
